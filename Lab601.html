@@ -1,0 +1,160 @@
+<!DOCTYPE HTML> 
+    <html>
+    <head>
+    <title>My fourth web page </title>
+    <style>
+    body {width: 100%; }
+    #container {
+        width: 70%; 
+        text-align: left;
+        margin: 0px auto;
+    }
+     #photo { 
+        backround-color: #eefeee; 
+        margin-left: auto;
+        margin-right: 0;
+        float:right; 
+        width: 200px;
+    }
+        #myphoto {
+            height: auto;
+            width: 150px; 
+            border: 1px solid #ddd;
+            border-radius:50%;
+            padding:5px;
+            display:blcok;
+            margin:auto;
+        }
+        #caption{
+            font-size:10px;
+            font-family:times;
+            text-align:center; 
+        }
+        p, td, li {
+       font-size:10px;
+       font-family:times;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family:times;
+            backround-color: #fefeee;
+        }
+        a {text-decoration:none; }
+        a:visited {backround-color: #feeeee; }
+        a:link {backround-color: #eeeefe; } 
+        a:hover (backround-color: #fefeee;}
+
+      #Films {
+        font-family:Arial;
+        border-collapse:collapse;
+        width:100%; 
+      }
+
+      #films th, #films td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #films th {
+        font: black bold times;
+        backround-color: #04aa6d;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white; 
+      }
+    </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+       $(document). ready(function() {
+       // this is where I put my javascript
+       console.log("started javascript"); 
+
+       
+       // do this when we click on the clicktoreveal1 button
+      concole.log("clicked on the first button");
+       
+       $("#clicktoreveal1").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal1").html("Fellowship of the Ring"); 
+         }); 
+
+
+       // do this when we click on the clicktoreveal2 button
+       console.log("clicked on the 2nd button"); 
+       
+       $("#clicktoreveal2").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal2").html("Two Towers"); 
+         }); 
+
+
+
+       // do this when we click on the clicktoreveal1 button
+        console.log("clciked on the 3rd button");  
+       
+        $("#clicktoreveal3").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal3").html("Return of the King"); 
+         }); 
+
+        // closing the document.ready 
+         }); 
+      </script>
+   
+    
+    
+    
+    
+    </head>
+    <body>
+    <div id="container">
+    <h1>Welcome to my seventh web page for web mapping!</h1>
+    <p>This is our 6th lab!</p>
+    <div id="About me">
+    <h2>Here are some things to learn about me!</h2>
+    <p>I love these things most in life:</p>
+    <ol>
+      <li>Our natural world</li>
+      <li>Wildlife filmmaking and conservation storytelling</li>
+      <li>Experiencing things I never have before</li>
+      </ol>
+    </div>
+    <div id="More about me">
+    <p>Some other things to know about me about me:</p>    
+    <ul>
+      <li>I am a biology major at MSU with a minor in GIS.</li>
+      <li>Spring and Fall are my favorite times of year.</li>
+      <li>I love Yellowstone more than most things in life!</li>
+    </ul> 
+      <h2>My Favorite Lord of the Rings Movies</h2>
+      <table>
+        <tr>
+      <th>Film Name</th>
+      <th>Descriptiion</th>
+      <th>Rating</th>
+        </tr>
+        <tr>
+          <td><button id="clicktoreveal1">Click to reaveal..</button> </td>
+          <td>Frodo gets the ring! </td>
+          <td>5 stars</td>
+        </tr>
+        <tr>
+          <td><button id="clicktoreveal2">Click to reaveal..</button> </td>
+          <td>My Precious!</td>
+          <td>4 stars</td>
+        </tr>
+        <tr>
+          <td><button id="clicktoreveal3">Click to reaveal..</button> </td>
+          <td>The Ring is destroyed!</td>
+          <td>5 Stars</td>
+        </tr>
+      </table>
+      
+       <div id="photo" 
+         <img id="myphoto" src= "https://github.com/TannerHaver/Tanner.github.io-/blob/main/IMG_1140.jpeg"/> 
+         <p class="caption">Tanner Haver </p>
+         <p class="caption">Photo by author </p>
+         My website <a href="https://www.roaringmountainmedia.com">Roaring Mountain Media.</a>. 
+       </div> 
+    </body>
+    </html>
