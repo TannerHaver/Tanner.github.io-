@@ -66,7 +66,37 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script>
        // this is where I put my javascript
+
+       // do this when we click on the clicktoreveal1 button
+       $("#clicktoreveal1").click(function() {
+         // run this when I click on this button 
+         $("clicktoreveal1").html("Fellowship of the Ring"); 
+         }); 
+
+
+       // do this when we click on the clicktoreveal1 button
+       $("#clicktoreveal2").click(function() {
+         // run this when I click on this button 
+         $("clicktoreveal2").html("Two Towers"); 
+         }); 
+
+
+
+       // do this when we click on the clicktoreveal1 button
+       $("#clicktoreveal3").click(function() {
+         // run this when I click on this button 
+         $("clicktoreveal3").html("Return of the King"); 
+         }); 
+       
+       
+
+       
       </script>
+   
+    
+    
+    
+    
     </head>
     <body>
     <div id="container">
@@ -96,22 +126,21 @@
       <th>Rating</th>
         </tr>
         <tr>
-          <td>Fellowship of the Ring</td>
+          <td><button id="clicktoreveal1">Click to reaveal...</button>button></td>
           <td>Frodo embarks on an epic journey</td>
           <td>5 stars</td>
         </tr>
         <tr>
-          <td>The Two Towers</td>
+          <td><button id="clicktoreveal2">Click to reaveal...</button>button></td>
           <td>My Precious!</td>
           <td>4 stars</td>
         </tr>
         <tr>
-          <td>Return of the King</td>
+          <td><button id="clicktoreveal3">Click to reaveal...</button>button></td>
           <td>The Ring is destroyed!</td>
           <td>5 Stars</td>
         </tr>
         </table>
-      
       
        <div id="photo" 
          <img id="myphoto" src="IMG_1076.png"/>         
