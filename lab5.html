@@ -38,11 +38,76 @@
             font-family:times;
             backround-color: #fefeee;
         }
+        
+        
         a {text-decoration:none; }
         a:visited {backround-color: #feeeee; }
         a:link {backround-color: #eeeefe; } 
         a:hover (backround-color: #fefeee;}
-        
+
+
+
+      #Films{
+        font-family:Arial;
+        border-collapse:collapse;
+        width:100%; 
+      }
+
+      #films th, #films td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #films th {
+        font: black bold times;
+        backround-color: #04aa6d;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white; 
+      }
+    </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+       $(document). ready(function() {
+       // this is where I put my javascript
+       console.log("started javascript"); 
+
+       
+       // do this when we click on the clicktoreveal1 button
+      concole.log("clicked on the first button");
+       
+       $("#clicktoreveal1").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal1").html("Fellowship of the Ring"); 
+         }); 
+
+
+       // do this when we click on the clicktoreveal2 button
+       console.log("clicked on the 2nd button"); 
+       
+       $("#clicktoreveal2").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal2").html("Two Towers"); 
+         }); 
+
+
+
+       // do this when we click on the clicktoreveal1 button
+        console.log("clciked on the 3rd button");  
+       
+        $("#clicktoreveal3").click(function() {
+         // run this when I click on this button 
+         $("#clicktoreveal3").html("Return of the King"); 
+         }); 
+
+        // closing the document.ready 
+         }); 
+      </script>
+   
+    
+    
+    
     </style>
     </head>
     <body>
