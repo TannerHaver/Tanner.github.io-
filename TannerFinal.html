@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Dall Sheep Study Areas </title>
-  
+  <div id="map-title"><h1>My Amazing First Leaflet Map!</h1> </div>
+<style>
+  html, body { height: 100%; }
+  #map { height: 80%; width: 95%; }
+  #map-title { width: 100%; }
+</style>
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/> 
@@ -36,7 +41,7 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
     radius: 500
  }).addTo(map);
     
- var square = L.square([
+ var polygon = L.polygon([
     [67.692771, -163.388672],
     [67.908619, -145.151367],
     [65.458261, -160.751953],
@@ -46,7 +51,7 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
 
 marker.bindPopup("<b>Alaska</b>.").openPopup();
 circle.bindPopup("Heart of Study Units.");
-square.bindPopup("Study Range Dall Sheep.");
+polygon.bindPopup("Study Range Dall Sheep.");
 
     
 var popup = L.popup()
