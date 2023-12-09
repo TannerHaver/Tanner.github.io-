@@ -76,6 +76,18 @@ function onMapClick(e) {
         .openOn(map);
 }
 
+// let's add the Dall Sheep data here
+     $.getJSON('./SurveyUnits_Large_ARCNSheep_WGS84.geojson', function(data) {
+        // convert the file (data) into a layer 
+	SurveyUnits_Large_ARCNSheep_WGS84 = L.geoJSON(data).addTo(map); 
+
+	// move the map to the area of the data 
+	map.panTo(SurveyUnits_Large_ARCNSheep_WGS84.getBounds().getCenter()); 
+
+	// add the map to the layer controls 
+	layerControl.addOverlay(SurveyUnits_Large_ARCNSheep_WGS84, "SurveyUnits_Large_ARCNSheep_WGS84");      
+     });      
+
     
 </script> 
 
