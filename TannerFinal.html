@@ -29,7 +29,7 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
   
  var marker = L.marker([62.674143, -149.238281]).addTo(map);
 
- var circle = L.circle([44.799622, -110.714121], {
+ var circle = L.circle([66.530768, -151.962891], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
@@ -37,15 +37,16 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
  }).addTo(map);
     
  var polygon = L.polygon([
-    [44.813262, -110.777636],
-    [44.806199, -110.768452],
-    [44.803093, -110.780811]
+    [67.692771, -163.388672],
+    [67.908619, -145.151367],
+    [65.458261, -160.751953],
+    [65.820782, -143.657227]
  ]).addTo(map);
 
 
 marker.bindPopup("<b>Alaska</b>.").openPopup();
-circle.bindPopup("Point of Interest.");
-polygon.bindPopup("A Unique Place.");
+circle.bindPopup("Heart of Study Units.");
+polygon.bindPopup("Study Range Dall Sheep.");
 
     
 var popup = L.popup()
