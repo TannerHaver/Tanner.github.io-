@@ -77,6 +77,16 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+
+// load GeoJSON from an external file
+var myDataVariable;
+$.getJSON("SurveyUnits_Large_ARCNSheep_WGS84.geojson",function(data){
+	// add GeoJSON layer to the map once the file is loaded
+	myDataVariable = L.geoJson(data).addTo(map);
+});
+
+
+    
     
 </script> 
 </body>
