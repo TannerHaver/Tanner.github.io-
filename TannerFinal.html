@@ -76,18 +76,61 @@ function onMapClick(e) {
         .openOn(map);
 }
 
-map.on('click', onMapClick);
-
-// load GeoJSON from an external file
-var myDataVariable;
-$.getJSON("SurveyUnits_Large_ARCNSheep_WGS84.geojson",function(data){
-	// add GeoJSON layer to the map once the file is loaded
-	myDataVariable = L.geoJson(data).addTo(map);
-});
-
-
-    
-    
+var geojson = "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Yellowstone"
+      },
+      "geometry": {
+        "coordinates": [
+          -110.59958027371752,
+          44.66408496003291
+        ],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Yellowstone National Park"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -111.03257012262631,
+              44.99067259103904
+            ],
+            [
+              -111.03257012262631,
+              44.17319913394266
+            ],
+            [
+              -110.01882404780068,
+              44.17319913394266
+            ],
+            [
+              -110.01882404780068,
+              44.99067259103904
+            ],
+            [
+              -111.03257012262631,
+              44.99067259103904
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 1
+    }
+  ]
+}
+L.geoJSON9(geojson).addTo(map)	  
 </script> 
+
+
 </body>
 </html>
