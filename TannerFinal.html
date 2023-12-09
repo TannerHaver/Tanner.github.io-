@@ -36,7 +36,7 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
     radius: 500
  }).addTo(map);
     
- var polygon = L.polygon([
+ var square = L.square([
     [67.692771, -163.388672],
     [67.908619, -145.151367],
     [65.458261, -160.751953],
@@ -46,7 +46,7 @@ var map = L.map('map').setView([44.776474, -110.734119], 13);
 
 marker.bindPopup("<b>Alaska</b>.").openPopup();
 circle.bindPopup("Heart of Study Units.");
-polygon.bindPopup("Study Range Dall Sheep.");
+square.bindPopup("Study Range Dall Sheep.");
 
     
 var popup = L.popup()
